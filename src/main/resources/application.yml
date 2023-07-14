@@ -1,0 +1,30 @@
+# 服务器相关
+server:
+  ip: 127.0.0.1
+  port: 8080
+
+# MP相关
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  type-aliases-package: com.qst.dms.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+
+spring:
+  # APP相关
+  application:
+    name: dms
+  # datasource相关
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://${server.ip}:3306/dms
+      username: yourusername
+      password: yourpassword
+  # mail相关
+  mail:
+    host: smtp.qq.com
+    username: yourusername
+    password: yourpassword

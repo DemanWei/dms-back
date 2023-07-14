@@ -1,0 +1,1 @@
+1.将/resources/assets目录下的sigar-amd64-winnt.dll放到jdk11/bin目录下
